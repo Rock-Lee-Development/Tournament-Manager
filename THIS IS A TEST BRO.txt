@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-just testing
-=======
-This is me testing an update to this file.
->>>>>>> 81c7ca8f239b39f2b029095fcb1c8b3fd429b539

@@ -1,1 +1,114 @@
 <!-- create tounrmanet page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Create Tournament Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<!--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/createtournament.css" rel="stylesheet">
+
+</head>
+<body>
+
+<form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+
+          <legend>Create Tounrnament</legend>
+
+
+        <!-- holder name input-->
+
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="holdername"></label>
+            <div class="col-md-6">
+                <input id="holdername" name="holdername" type="text" placeholder="Holder Name" class="form-control input-md" required="">
+            </div>
+          </div>
+
+
+
+        <!-- holder contact input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="contact"></label>
+            <div class="col-md-6">
+                <input id="contact" name="contact" type="text" placeholder="Contact Information" class="form-control input-md" required="">
+            </div>
+        </div>
+
+        <!-- type of the tournament -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="eventType"></label>
+            <div class="col-md-4">
+                <select id="eventType" name="eventType" class="form-control">
+                    <option value="TOURNAMENT1">Tournament1</option>
+                    <option value="TOURNAMENT2">Tournament2</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Appended Input-->
+         <div class="form-group">
+             <label class="col-md-4 control-label" for="eventDate"></label>
+             <div class="col-md-4">
+                 <div class="input-group">
+                     <input id="eventDate" name="eventDate" class="form-control" placeholder="DD/MM/YYYY" type="text" required="">
+                     <span class="input-group-addon">Calendar</span>
+                 </div>
+
+             </div>
+         </div>
+
+         <!-- Appended Input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="eventStart"></label>
+              <div class="col-md-4">
+                  <div class="input-group">
+                      <input id="eventStart" name="eventStart" class="form-control" placeholder="From" type="text" required="">
+                      <span class="input-group-addon"></span>
+                      <input id="eventEnd" name="eventEnd" class="form-control" placeholder="To" type="text" required="">
+                      <span class="input-group-addon"></span>
+                  </div>
+
+              </div>
+          </div>
+
+
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="description"></label>
+            <div class="col-md-6">
+
+                <textarea id="description" name="description" rows="7" type="text" placeholder="Description" class="form-control input-md" ></textarea>
+
+            </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submitButton"></label>
+            <div class="col-md-8">
+                <button id="submitButton" name="submitButton" class="btn btn-dark">Create</button>
+                <button id="cancelButton" name="cancelButton" class="btn btn-warning">Cancel</button>
+            </div>
+        </div>
+
+        
+
+    </fieldset>
+</form>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</html>
